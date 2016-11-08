@@ -16,6 +16,7 @@ The following libraries are used in the notebook:
 * SciKit-Learn
 * MatPlotLib
 * Seaborn  
+
 The easiest way to install these is with the Anaconda distribution of Python. All but Seaborn are included in the default install of Anaconda, available [here](https://www.continuum.io/downloads), and Seaborn can be added once Anaconda is installed with:
 ```
 conda install -c anaconda seaborn=0.7.1
@@ -27,7 +28,9 @@ Two datasets are drawn from to create the aggregated dataset `MergedDatset.csv`.
   * Available at [https://catalog.data.gov/dataset/college-scorecard](https://catalog.data.gov/dataset/college-scorecard)
 * The Delta Cost Project Database, by the Integraded Postsecondary Education Data System
   * Available at [http://nces.ed.gov/ipeds/deltacostproject/](http://nces.ed.gov/ipeds/deltacostproject/)  
+
 The code used to create `MergedDataset.csv` is found in `mergeIPEDSCSC.py`. Running this code requires all of the IPEDS and CSC data to be present.  
+
 #### Note:  
 Running the **Data Exploration** portion of the notebook requries the `delta_public_00_12.csv` file from the IPEDS dataset and `MERGED2000_PP.csv` file from the CSC dataset. However, to avoid downloading the original sources of data and just use the provided `MergedDataset.csv`, run the cell that imports the libraries and the cell that declares the IPEDS feature lists and skip ahead to the **Complete Dataset** section.
 
